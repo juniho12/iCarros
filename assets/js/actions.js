@@ -26,19 +26,19 @@ function scope() {
 }
 
 function scopeFalse() {
-    document.getElementById("scopename").innerHTML = objectPerson.name;
-    document.getElementById("scopeage").innerHTML = objectPerson.age;
-    document.getElementById("scopeheight").innerHTML = objectPerson.height;
+    try {
+        document.getElementById("scopename").innerHTML = objectPerson.name;
+        document.getElementById("scopeage").innerHTML = objectPerson.age;
+        document.getElementById("scopeheight").innerHTML = objectPerson.height;
+      }
+      catch(err) {
+        document.getElementById("result").innerHTML = err.message;
+      }
 }
-
-
-
-
 
 function addSixFunction(baseNumber) {
     var six = 6;
     const newValue =  six + baseNumber;
-
     alert(newValue);
 }
  

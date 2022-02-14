@@ -35,6 +35,7 @@
                 <p>CSS Arquivo Externo</p>
             </div>
             <div class="box-model">
+                <p class="title"> Box Model </p>
                 <div class="box">
                     <p><span>20px padding</span> <span> 20px Margin</span> <span>15px #3ab87a border</span></p>
                 </div>
@@ -43,10 +44,10 @@
             <div class="scope">
                 
                 
-                <p class="button-escope">Exemplo de escopo</p>
+                <p class="button">Exemplo de escopo</p>
                 <div class="wrapper-buttons">
                     <p class="button-escope" onclick="scope()">Exemplo Válido</p>
-                    <p class="button-escope" onclick="scopeFalse()">Exemplo Não Válido</p>
+                    <p class="button-escope" onclick="scopeFalse()">Exemplo Inválido</p>
                 </div>
                 
                 <p class="person">String: { "name": "Celso Tanikawa", "age": 26, "height": 1.80}</p>
@@ -56,6 +57,7 @@
                 <p class="description">Idade: <span id="scopeage"></span></p>
                 <p class="description">Altura: <span id="scopeheight"></span></p>
 
+                <p class="button" id="result"></p>
             </div>
 
             <div class="addSix">
@@ -73,7 +75,7 @@
             <div class="person">
                 <p class="person">String: { "name": "Erick Schimdt", "age": 32, "height": 1.78}</p>
                
-                <p class="button" onclick="person()">Transformando em objeto</p>
+                <p class="button-escope" onclick="person()">Transformando em objeto</p>
                 <p class="description">Nome: <span id="name"></span></p>
                 <p class="description">Idade: <span id="age"></span></p>
                 <p class="description">Altura: <span id="height"></span></p>

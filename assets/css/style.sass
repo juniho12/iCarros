@@ -3,22 +3,7 @@ body
     padding: 0
     margin: 0
     box-sizing: border-box	
-    aside
-        nav
-            ul
-                margin: 0
-                padding: 0
-                display: flex
-                justify-content: center
-                background: #2262CC
-                gap: 5%
-                li
-                    padding: 20px
-                    list-style: none
-                    a
-                        text-transform: uppercase
-                        color: #FFF
-                        text-decoration: unset
+
     header
         h1
             text-align: center
@@ -29,7 +14,7 @@ body
     section
         display: grid
         place-items: center
-        grid-row-gap: 30px
+        grid-row-gap: 50px
         &#practice
             max-width: 1280px
             margin: 0 auto
@@ -44,16 +29,27 @@ body
             p:last-of-type
                 color: green
         .box-model
+            .title
+                font-size: 20px
+                text-transform: uppercase
+                cursor: pointer
+                font-weight: bold
+                box-sizing: border-box
+                color: #2262CC
+                padding: 15px 20px
+                text-align: center
+                border: 1px solid #2262CC
             .box
                 width: 200px
                 height: 150px
                 border: 15px solid #ccc
                 padding: 10px
                 margin: 20px
+                
                 background: #3ab87a			
                 box-sizing: border-box		
                 p
-                    text-align: center
+                    text-align: center 
                     color: #fff
                     font-size: 12px
                     line-height: 2
@@ -102,6 +98,12 @@ body
             p.person
                 font-weight: bold
                 color: #2262CC
+            p.button-escope
+                border: 1px solid #2262CC
+                &:hover
+                    background: #2262CC
+                    color: #fff
+                    border: 1px solid #2262CC
             p.button, p.button-escope
                 font-weight: bold
                 font-size: 20px
@@ -112,11 +114,8 @@ body
                 color: #2262CC
                 padding: 5px 10px
                 text-align: center
-                border: 1px solid #2262CC
-                &:hover
-                    background: #2262CC
-                    color: #fff
-                    border: 1px solid #2262CC
+                 
+                
             p.description
                 font-weight: bold
                 color: #2262CC
