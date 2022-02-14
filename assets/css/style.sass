@@ -1,0 +1,150 @@
+body
+    font-family: 'Roboto', sans-serif
+    padding: 0
+    margin: 0
+    box-sizing: border-box	
+    aside
+        nav
+            ul
+                margin: 0
+                padding: 0
+                display: flex
+                justify-content: center
+                background: #2262CC
+                gap: 5%
+                li
+                    padding: 20px
+                    list-style: none
+                    a
+                        text-transform: uppercase
+                        color: #FFF
+                        text-decoration: unset
+    header
+        h1
+            text-align: center
+            font-size: 2rem
+            font-weight: 400
+            span
+                font-weight: bold
+    section
+        display: grid
+        place-items: center
+        grid-row-gap: 30px
+        &#practice
+            max-width: 1280px
+            margin: 0 auto
+            background: #cccccc60
+        .types-css
+            display: flex
+            width: 100%
+            gap: 5%
+            justify-content: center
+            p
+                font-weight: bold
+            p:last-of-type
+                color: green
+        .box-model
+            .box
+                width: 200px
+                height: 150px
+                border: 15px solid #ccc
+                padding: 10px
+                margin: 20px
+                background: #3ab87a			
+                box-sizing: border-box		
+                p
+                    text-align: center
+                    color: #fff
+                    font-size: 12px
+                    line-height: 2
+                    text-transform: uppercase
+                    span
+                        display: block
+        .addSix
+            p
+                font-size: 20px
+                text-transform: uppercase
+                cursor: pointer
+                font-weight: bold
+                box-sizing: border-box
+                color: #2262CC
+                padding: 15px 20px
+                border: 1px solid #2262CC
+        .duplicate
+            .title
+                font-size: 20px
+                text-transform: uppercase
+                cursor: pointer
+                font-weight: bold
+                box-sizing: border-box
+                color: #2262CC
+                padding: 15px 20px
+                border: 1px solid #2262CC
+                &:hover
+                    background: #2262CC
+                    color: #fff
+                    border: 1px solid #2262CC
+            .numbers
+                text-align: center
+                color: #2262CC
+                font-size: 20px
+                letter-spacing: 1.5px
+                span
+                    margin: 0 5px
+        .person, .scope
+            .wrapper-buttons
+                display: flex
+                justify-content: center
+                gap: 1%
+                max-width: 500px
+                p
+                    font-size: 15px !important
+            p.person
+                font-weight: bold
+                color: #2262CC
+            p.button, p.button-escope
+                font-weight: bold
+                font-size: 20px
+                text-transform: uppercase
+                cursor: pointer
+                font-weight: bold
+                box-sizing: border-box
+                color: #2262CC
+                padding: 5px 10px
+                text-align: center
+                border: 1px solid #2262CC
+                &:hover
+                    background: #2262CC
+                    color: #fff
+                    border: 1px solid #2262CC
+            p.description
+                font-weight: bold
+                color: #2262CC
+                text-transform: uppercase
+                padding-right: 5px
+                span
+                    text-transform: capitalize
+                    font-weight: 100
+
+
+    footer
+        h4
+            font-size: 20px
+            color: #2262CC
+            font-weight: bold
+        .person
+            margin: 50px 0
+            text-align: center
+            .wrapper-icons
+                display: flex
+                justify-content: center
+                gap: 1%
+                img
+                    max-width: 50px
+                    width: 100%
+            .example
+                display: grid
+                .wrapper-icons
+                    display: grid
+                    img
+                        max-width: unset

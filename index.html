@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+
+    <title>Avaliação Front end Jr - iCarros</title>
+
+    <style type="text/css">
+        section .types-css p:nth-child(2) {
+            color: rgb(0, 38, 255);
+        }
+    </style>
+
+</head>
+<body>
+
+    
+
+    <article>
+        <header>
+            <h1>Avaliação Front end Jr - iCarros</h1>
+        </header>
+
+        <section id="practice">
+            
+            <div class="types-css">
+                <p style="color: red">CSS Inline</p>
+                <p>CSS Interno</p>
+                <p>CSS Arquivo Externo</p>
+            </div>
+            <div class="box-model">
+                <div class="box">
+                    <p><span>20px padding</span> <span> 20px Margin</span> <span>15px #3ab87a border</span></p>
+                </div>
+            </div>
+
+            <div class="scope">
+                
+                
+                <p class="button-escope">Exemplo de escopo</p>
+                <div class="wrapper-buttons">
+                    <p class="button-escope" onclick="scope()">Exemplo Válido</p>
+                    <p class="button-escope" onclick="scopeFalse()">Exemplo Não Válido</p>
+                </div>
+                
+                <p class="person">String: { "name": "Celso Tanikawa", "age": 26, "height": 1.80}</p>
+                
+                
+                <p class="description">Nome: <span id="scopename"></span></p>
+                <p class="description">Idade: <span id="scopeage"></span></p>
+                <p class="description">Altura: <span id="scopeheight"></span></p>
+
+            </div>
+
+            <div class="addSix">
+                <p class="number" onclick="addSixFunction(10)"> addSix(10)</p>
+                <p class="number" onclick="addSixFunction(21)"> addSix(21)</p>
+
+            </div>
+            <div class="duplicate">
+                <p class="title"  onclick="duplicate()"><span>CLIQUE AQUI</span> para Duplicar</p>
+
+                <p class="numbers">[<span id="duplicate">1,2,3,4,5</span>]</p>
+                </div>
+            </div>
+
+            <div class="person">
+                <p class="person">String: { "name": "Erick Schimdt", "age": 32, "height": 1.78}</p>
+               
+                <p class="button" onclick="person()">Transformando em objeto</p>
+                <p class="description">Nome: <span id="name"></span></p>
+                <p class="description">Idade: <span id="age"></span></p>
+                <p class="description">Altura: <span id="height"></span></p>
+                </div>
+            </div>
+            
+            
+
+        </section>
+        
+        <footer>
+            <div class="person">
+                <h4>Celso Tanikawa</h4>
+
+                
+                <div class="wrapper-icons">
+                    <a href="https://www.linkedin.com/in/celso-tanikawa/" target="_blank"> 
+                        <img src="assets/img/linkedin.png" alt="Logo Linkedin - Celso Tanikawa">
+                    </a>
+                    <a href="https://www.linkedin.com/in/celso-tanikawa/" target="_blank"> 
+                        <img src="assets/img/whatsapp-messenger.png" alt="Logo WhatsApp - Celso Tanikawa">
+                    </a>
+                </div>
+                
+                <div class="example">
+                    <p>Exemplo com ALT</p>
+                    <div class="wrapper-icons">
+                        <a href="https://www.linkedin.com/in/celso-tanikawa/" target="_blank"> 
+                            <img src="" alt="Logo Linkedin - Celso Tanikawa">
+                        </a>
+                        </a>
+                    </div>
+                    <p>Exemplo sem ALT</p>
+                    <div class="wrapper-icons">
+                        <a href="https://www.linkedin.com/in/celso-tanikawa/" target="_blank"> 
+                            <img src="">
+                        </a>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+    </article>
+
+    <script src="assets/js/actions.js"></script>
+</body>
+</html>
